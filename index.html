@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>NNR Food Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="overlay">
+
+        <header>
+            <h1>🍱 NNR FOOD SERVICE</h1>
+            <p>Share Food • Save Lives • Earn Rewards</p>
+        </header>
+
+        <!-- MENU -->
+        <div class="menu">
+            <div class="card" onclick="showSection('donate')">Donate Food</div>
+            <div class="card" onclick="showSection('volunteer')">Volunteer Help</div>
+            <div class="card" onclick="showSection('rewards')">Earn Rewards</div>
+        </div>
+
+        <!-- DONATE SECTION -->
+        <section id="donate">
+            <span class="back" onclick="goHome()">← Back</span>
+            <h2>Donate Food</h2>
+
+            <input type="text" id="donorName" placeholder="Your Name">
+            <input type="text" id="donorPhone" placeholder="Mobile Number">
+            <textarea id="foodDetails" placeholder="Food Details"></textarea>
+
+            <button onclick="submitDonation()">Submit Donation</button>
+            <div class="message" id="donateMsg"></div>
+        </section>
+
+        <!-- VOLUNTEER SECTION -->
+        <section id="volunteer">
+            <span class="back" onclick="goHome()">← Back</span>
+            <h2>Volunteer Registration</h2>
+
+            <input type="text" id="volName" placeholder="Your Name">
+            <input type="text" id="volPhone" placeholder="Mobile Number">
+
+            <button onclick="submitVolunteer()">Register</button>
+            <div class="message" id="volMsg"></div>
+        </section>
+
+        <!-- REWARDS SECTION -->
+        <section id="rewards">
+            <span class="back" onclick="goHome()">← Back</span>
+            <h2>Earn Rewards</h2>
+
+            <button onclick="checkRewards()">Check Points</button>
+            <div class="message" id="rewardMsg"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

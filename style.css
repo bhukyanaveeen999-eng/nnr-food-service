@@ -1,0 +1,96 @@
+/* GLOBAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: url('bg-food.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    min-height: 100vh;
+    padding: 20px;
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/* MENU */
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+    color: black;
+    padding: 20px;
+    width: 220px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* SECTIONS */
+section {
+    background: rgba(255, 255, 255, 0.9);
+    color: black;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    display: none;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+}
+
+button {
+    width: 100%;
+    padding: 8px;
+    background: green;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: darkgreen;
+}
+
+.back {
+    cursor: pointer;
+    color: blue;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
